@@ -1,0 +1,79 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+
+<head>
+    <title>Survey Form</title>
+</head>
+
+<h1 id = "title"> Survey Form </h1>
+
+<body style  = "background-color: #c6b9ff">
+  <main  class = "main">    
+      <form id = "survey-form">    
+       <div>
+         <p id = "description"> What are you study habits? </p>
+       <div class = "survey-grid">
+         
+         <!-- Left side of grid--> 
+      <div class = "spacer" id = "description-form-left">
+        <div class = "spacer"><label id = "name-label">* Name:</label></div>
+        <div class = "spacer"><label id = "email-label">* Email:</labe></div>
+        <div class = "spacer"> <label id = "number-label">* Age:</label></div>
+        <div class = spacer><label> How often do you study? </label></div>
+        <div class = "spacer"><label>* Does coding change lives? </label></div>
+        <div class = "spacer" > <label> Best ways for you to learn code? </label></div>
+        <div class = "spacer"> <label for = "commentbox"> Any suggestions? </label></div>
+      </div>
+         <!-- right side of grid --> 
+      <div id = "description-form-right">
+        <div class = "spacer">
+        <input type = "text" id = "name" name = "name" placeholder = "Enter your name" required>
+        </div>
+        <div class = "spacer">
+        <input type = "email" id = "email" required name = "email" pattern=".+@gmail.com" placeholder = "Enter Email">
+        </div>
+        <div class = "spacer">
+        <input type = "number" id = "number" name = "age" placeholder = "Age" required min          = "1" max = "100">  
+        </div>
+        <div class = "spacer">
+          <input type ="radio" name = "radio-button" value = "not-often"> 0 - 2 hours</input>
+          <input type ="radio" name = "radio-button" value = "somewhat-often"> 3 - 5 hours</input>
+          <input type ="radio" name = "radio-button" value = "often"> 6 - 10 hours</input>
+          <input type ="radio" name = "radio-button" value = "very-often"> 10+ hours</input>
+        </div>
+        <div class = "spacer">
+        <select id = "dropdown">
+          <option value = "0" name = "default"> Select Option </option>
+          <option value = "1" name = "Yes"> Yes </option> 
+          <option value = "2" name = "No"> No </option> 
+          <option value = "3" name = "Depends"> Depends </option> 
+        </select>
+        </div>
+        <div class = "spacer">
+          <input type = "checkbox" value = "visual" name = "Visual"> Visual</input>
+          <input type = "checkbox" value = "Aural" name = "Aural"> Aural</input>
+          <input type = "checkbox" value = "Verbal" name = "Verbal"> Verbal</input>
+          <input type = "checkbox" value = "Physical" name = "Physical"> Physical</input>
+          <input type = "checkbox" value = "Social" name = "Social"> Social</input>
+          <input type = "checkbox" value = "Solitary" name = "Solitary"> Solitary</input><br>
+        </div> 
+        <!-- Text -->
+        <textarea id = "comment-section" placeholder = "Comment here."></textarea> 
+      </div>         
+      </div> <!-- end of survey grid --> 
+         <input id = "submit" type = "submit" value = "Submit">
+      </div>      
+    </form>
+  </main>      
+</body>
+
